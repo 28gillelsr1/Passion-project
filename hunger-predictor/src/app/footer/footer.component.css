@@ -1,0 +1,37 @@
+:host {
+  display: block;
+}
+
+.footer {
+  background: #162d3a;
+  color: #bae6fd;
+  padding: 1rem 1.25rem;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.footer-info strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.footer-links a {
+  color: #9ed8f7;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,39 @@
+:host {
+  display: block;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background-color: #193443;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-brand {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+a {
+  color: #d6f4ff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.35rem;
+}
+
+a:hover,
+a.active {
+  background: rgba(255,255,255,0.14);
+}

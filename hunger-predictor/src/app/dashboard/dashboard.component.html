@@ -1,0 +1,44 @@
+<section class="dashboard-wrapper">
+  <h1>Hunger Risk Dashboard</h1>
+
+  <div class="controls">
+    <div class="control">
+      <label>Region</label>
+      <select [(ngModel)]="selectedRegion">
+        <option *ngFor="let region of regions" [value]="region">{{ region }}</option>
+      </select>
+    </div>
+
+    <div class="control">
+      <label>Timeframe</label>
+      <select [(ngModel)]="selectedTimeframe">
+        <option *ngFor="let range of timeframes" [value]="range">{{ range }}</option>
+      </select>
+    </div>
+
+    <button (click)="generatePrediction()">Generate Prediction</button>
+  </div>
+
+  <div class="card risk-card">
+    <h2>Hunger Risk Score</h2>
+    <div class="score">{{ riskScore() }}</div>
+    <div class="level" [class.low]="riskLevel()=== 'Low'" [class.moderate]="riskLevel()=== 'Moderate'" [class.high]="riskLevel()=== 'High'">
+      {{ riskLevel() }}
+    </div>
+  </div>
+
+  <div class="charts">
+    <div class="chart-card">
+      <h3>Food Price Trend</h3>
+      <div class="chart-placeholder">Chart.js placeholder</div>
+    </div>
+    <div class="chart-card">
+      <h3>Rainfall Trend</h3>
+      <div class="chart-placeholder">Chart.js placeholder</div>
+    </div>
+    <div class="chart-card">
+      <h3>Unemployment Trend</h3>
+      <div class="chart-placeholder">Chart.js placeholder</div>
+    </div>
+  </div>
+</section>

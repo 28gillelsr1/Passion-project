@@ -1,0 +1,11 @@
+<section class="datasources">
+  <h1>Data Sources</h1>
+  <p>Key datasets that feed the AI model.</p>
+
+  <div class="cards">
+    <article class="card" *ngFor="let item of datasets">
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.description }}</p>
+    </article>
+  </div>
+</section>
